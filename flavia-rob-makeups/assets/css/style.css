@@ -1,0 +1,20 @@
+@theme {
+    /*Cores*/
+    --color-primary: 15 28 36;
+    --color-secondary: 34 49 58;
+    --color-tertiary: 65 90 119;
+    --color-btn: 201 179 126;
+    
+    /*Fontes*/
+    --font-title: "Cormorant Garamond", serif;
+    --font-body: "Montserrat", sans-serif;
+
+    /*Espacing*/
+    --max-space: "100px";
+    --thirty-space: "80px";
+    --second-space: "32px";
+    --min-space: "16px";
+
+    /*Radius*/
+    --radius-default: 10px;
+}

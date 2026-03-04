@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+    /*Cores*/
+    --color-primary: rgb(15 28 36);
+    --color-secondary: rgb(34 49 58);
+    --color-tertiary: rgb(65 90 119);
+    --color-btn: rgb(201 179 126);
+    
+    /*Fontes*/
+    --font-title: "Cormorant Garamond", serif;
+    --font-body: "Montserrat", sans-serif;
+
+    /*Espacing*/
+    --max-space: "100px";
+    --thirty-space: "80px";
+    --second-space: "32px";
+    --min-space: "16px";
+
+    /*Radius*/
+    --rounded-default: 10px;
+
+    /*Images*/
+    --background-image-circo: url("../images/Circo.jpg");
+    --blob: url("../images/Vector.svg");
+}
+
+@source "../../*.html";
+@source "../js/**/*.js";
