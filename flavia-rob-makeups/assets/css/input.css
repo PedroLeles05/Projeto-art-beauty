@@ -11,18 +11,12 @@
     --font-title: "Cormorant Garamond", serif;
     --font-body: "Montserrat", sans-serif;
 
-    /*Espacing*/
-    --max-space: "100px";
-    --thirty-space: "80px";
-    --second-space: "32px";
-    --min-space: "16px";
-
     /*Radius*/
     --rounded-default: 10px;
 
     /*Images*/
     --background-image-circo: url("../images/Circo.jpg");
-    --blob: url("../images/Vector.svg");
+    --background-image-flavia: url("../images/flavia.png")
 }
 
 @source "../../*.html";
