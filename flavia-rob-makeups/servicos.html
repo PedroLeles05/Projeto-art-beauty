@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/input.css">
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+
+    
+<body>
+    <!--NavBar-->
+    <header class="flex justify-end fixed z-50 p-12 w-full">
+        <nav class="flex">
+            <ul class="flex gap-5 font-body text-xl text-white/85 transition cursor-pointer">
+                <li class="transition hover:text-white">Home</li>
+                <li class="transition hover:text-white">Sobre</li>
+                <li class="transition hover:text-white">Galeria</li>
+                <li class="transition hover:text-white">Serviços</li>
+                <li class="transition hover:text-white">Cursos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--hero-->
+    <section class="bg-mqm w-full h-[500px] bg-start bg-cover flex justify-start items-center px-12 overflow-hidden relative">
+
+        <div class="absolute top-20 left-8 w-[600px] h-[400px] rounded-full bg-white/15 blur-[120px] z-0 pointer-events-none"></div>
+
+         <div class=" flex flex-col justify-start items-start gap-4 relative z-10"> 
+            <h1 class="text-white/90 font-title text-8xl font-bold tracking[4%]">SERVIÇOS</h1>
+            <h2 class="text-white/75 text-base font-body tracking[4%]">Maquiagem profissional para diferentes estilos, ocasiões e produções.</h2>
+            <button class="bg-btn/70 hover:bg-btn/90 hover:scale-105 transition cursor-pointer text-base text-white/80 hover:text-white/90 tracking-[1%] py-4 px-10 rounded-[10px]">ENTRE EM CONTATO</button>
+         </div>
+      
+    </section>
+    
+    <!--área de serviços-->
+   <section class="flex flex-col justify-center items-center bg-secondary w-full min-h-[1180px]">
+    
+    <!--Filtros-->   
+    <div class="flex justify-center relative top-10 p-12 w-full py-[100px]">
+        <div class="flex">
+            <ul class="flex gap-[25px] font-body text-xl transition cursor-pointer">
+                <li class="text-white/65 transition hover:text-white hover:scale-102 hover:border border-white/40 px-3 py-1 hover:underline">Todas</li>
+                <li class="text-white/65 transition hover:text-white hover:scale-102 hover:border border-white/40 px-3 py-1 hover:underline">Neon</li>
+                <li class="text-white/65 transition hover:text-white hover:scale-102 hover:border border-white/40 px-3 py-1 hover:underline">Beauty</li>
+                <li class="text-white/65 transition hover:text-white hover:scale-102 hover:border border-white/40 px-3 py-1 hover:underline">Kids</li>
+                <li class="text-white/65 transition hover:text-white hover:scale-102 hover:border border-white/40 px-3 py-1 hover:underline">Efeitos</li>
+                <li class="text-white/65 transition hover:text-white hover:scale-102 hover:border border-white/40 px-3 py-1 hover:underline">Corporal</li>
+                <li class="text-white/65 transition hover:text-white hover:scale-102 hover:border border-white/40 px-3 py-1 hover:underline">Gestacional</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Cards-Serviços-->
+    <div class="grid grid-cols-3 w-fit h-fit mx-auto gap-x-8 gap-y-[100px] py-16">
+
+        <div class="flex flex-col bg-primary w-[400px] h-[383px] gap-y-3 transition hover:scale-105 p-6">
+            <img class="flex-1 w-full min-h-0 object-cover object-center" src="./assets/images/neon.jpg"/>
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-4">
+                    <p class="font-body text-white/65 text-[8px] tracking-[10%]">NEON</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Maquiagem Neon</p>
+                    <p class="font-body text-white/75 text-[13px] tracking-normal"> Produção pensada para realçar traços naturais, ideal para eventos sociais e ocasiões especiais.</p>
+                    <button class="bg-tertiary/70 hover:bg-tertiary/90 hover:scale-105 transition cursor-pointer text-sm text-white/80 hover:text-white/90 tracking-[1%] py-2 px-4 rounded-[10px]">ENTRE EM CONTATO</button>
+                </div>
+        </div>
+
+       <div class="flex flex-col bg-primary w-[400px] h-[425px] gap-y-3 transition hover:scale-105 p-6">
+            <img class="flex-1 w-full min-h-0 object-cover object-center" src="./assets/images/neon.jpg"/>
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-4">
+                    <p class="font-body text-white/65 text-[8px] tracking-[10%]">NEON</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Maquiagem Neon</p>
+                    <p class="font-body text-white/75 text-[13px] tracking-normal"> Produção pensada para realçar traços naturais, ideal para eventos sociais e ocasiões especiais.</p>
+                    <button class="bg-tertiary/70 hover:bg-tertiary/90 hover:scale-105 transition cursor-pointer text-sm text-white/80 hover:text-white/90 tracking-[1%] py-2 px-4 rounded-[10px]">ENTRE EM CONTATO</button>
+                </div>
+        </div>
+
+        <div class="flex flex-col bg-primary w-[400px] h-[425px] gap-y-3 transition hover:scale-105 p-6">
+            <img class="flex-1 w-full min-h-0 object-cover object-center" src="./assets/images/neon.jpg"/>
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-4">
+                    <p class="font-body text-white/65 text-[8px] tracking-[10%]">NEON</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Maquiagem Neon</p>
+                    <p class="font-body text-white/75 text-[13px] tracking-normal"> Produção pensada para realçar traços naturais, ideal para eventos sociais e ocasiões especiais.</p>
+                    <button class="bg-tertiary/70 hover:bg-tertiary/90 hover:scale-105 transition cursor-pointer text-sm text-white/80 hover:text-white/90 tracking-[1%] py-2 px-4 rounded-[10px]">ENTRE EM CONTATO</button>
+                </div>
+        </div>
+
+        <div class="flex flex-col bg-primary w-[400px] h-[425px] gap-y-3 transition hover:scale-105 p-6">
+            <img class="flex-1 w-full min-h-0 object-cover object-center" src="./assets/images/neon.jpg"/>
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-4">
+                    <p class="font-body text-white/65 text-[8px] tracking-[10%]">NEON</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Maquiagem Neon</p>
+                    <p class="font-body text-white/75 text-[13px] tracking-normal"> Produção pensada para realçar traços naturais, ideal para eventos sociais e ocasiões especiais.</p>
+                    <button class="bg-tertiary/70 hover:bg-tertiary/90 hover:scale-105 transition cursor-pointer text-sm text-white/80 hover:text-white/90 tracking-[1%] py-2 px-4 rounded-[10px]">ENTRE EM CONTATO</button>
+                </div>
+        </div>
+
+        <div class="flex flex-col bg-primary w-[400px] h-[383px] gap-y-3 transition hover:scale-105 p-6">
+            <img class="flex-1 w-full min-h-0 object-cover object-center" src="./assets/images/neon.jpg"/>
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-4">
+                    <p class="font-body text-white/65 text-[8px] tracking-[10%]">NEON</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Maquiagem Neon</p>
+                    <p class="font-body text-white/75 text-[13px] tracking-normal"> Produção pensada para realçar traços naturais, ideal para eventos sociais e ocasiões especiais.</p>
+                    <button class="bg-tertiary/70 hover:bg-tertiary/90 hover:scale-105 transition cursor-pointer text-sm text-white/80 hover:text-white/90 tracking-[1%] py-2 px-4 rounded-[10px]">ENTRE EM CONTATO</button>
+                </div>
+        </div>
+
+       <div class="flex flex-col bg-primary w-[400px] h-[425px] gap-y-3 transition hover:scale-105 p-6">
+            <img class="flex-1 w-full min-h-0 object-cover object-center" src="./assets/images/neon.jpg"/>
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-4">
+                    <p class="font-body text-white/65 text-[8px] tracking-[10%]">NEON</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Maquiagem Neon</p>
+                    <p class="font-body text-white/75 text-[13px] tracking-normal"> Produção pensada para realçar traços naturais, ideal para eventos sociais e ocasiões especiais.</p>
+                    <button class="bg-tertiary/70 hover:bg-tertiary/90 hover:scale-105 transition cursor-pointer text-sm text-white/80 hover:text-white/90 tracking-[1%] py-2 px-4 rounded-[10px]">ENTRE EM CONTATO</button>
+                </div>
+        </div>
+    </div>
+
+   </section>
+
+   <!--Ver mais-->
+   <section class="bg-linear-to-b from-secondary to-primary w-full h-[244px]">
+        <div class="flex justify-center relative w-full py-[50px] transition cursor-pointer">
+                <p class="font-body text-xl text-white/65 border border-white/65 px-6 py-1 transition hover:text-white hover:border hover:border-white/80 hover:scale-102">Ver Mais</p>
+        </div>
+   </section>
+
+   <!--Processo de agendamento-->
+   <Section class="bg-primary w-full h-[776px]">
+
+    <!--Mensagem-->    
+        <div class="flex flex-col justify-center h-[124px] pl-[100px]">
+            <p class="font-body text-white/60 text-[14px] tracking-[16%]">COMO FUNCIONA<br></p>
+            <p class="font-body text-white/90 top-2 text-4xl tracking-[12%] ">Processo de Agendamento</p>
+        </div>
+
+        <!--Processo-->
+        <div class="grid grid-cols-4 w-fit h-fit mx-auto gap-x-8 gap-y-[100px] py-16">
+
+            <div class="flex flex-col bg-secondary w-[274px] h-[331px] gap-y-3 p-6">
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-2">
+                    <p class="font-body text-white/90 text-[24px]">01.</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Escolha um Serviço</p>
+                    <p class="mt-[100px] font-body text-white/80 text-[12px] tracking-normal">Selecione o serviço que melhor atende sua necessidade. Tudo é pensado para ser rápido e sem complicações.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-secondary w-[274px] h-[331px] gap-y-3 p-6">
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-2">
+                    <p class="font-body text-white/90 text-[24px]">02.</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Entre emb<br>contato</p>
+                    <p class="mt-[100px] font-body text-white/80 text-[12px] tracking-normal">Clique no botão "Agendar Atendimento" e entre em contato com o ART & BEAUTY</p>
+                </div>
+            </div>
+
+           <div class="flex flex-col bg-secondary w-[274px] h-[331px] gap-y-3 p-6">
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-2">
+                    <p class="font-body text-white/90 text-[24px]">03.</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Explique o que você precisa</p>
+                    <p class="mt-[100px] font-body text-white/80 text-[12px] tracking-normal">Conte os detalhes do seu projeto diretamente no chat. O atendimento é humano. personalizado e sem formulários.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-secondary w-[274px] h-[331px] gap-y-3 p-6">
+                <div class="flex flex-col w-full h-fit justify-center items-start gap-2">
+                    <p class="font-body text-white/90 text-[24px]">04.</p>
+                    <p class="font-body text-white/90 text-2xl font-semibold">Solução alinhada com você</p>
+                    <p class="mt-[100px] font-body text-white/80 text-[12px] tracking-normal">conversamos, ajustamos e resolvemos tudo pelo WhatsApp até chegar na melhor solução para você.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Agendar atendimento-->
+        <div class="flex relative bg-secondary w-[1192px] h-16 mx-auto">
+    <div class="flex items-center w-full -space-x-3 mt-2 px-8">
+        <img class="w-10 h-10 rounded-full object-cover" src="./assets/images/rosto 1.jpg">
+        <img class="w-10 h-10 rounded-full object-cover" src="./assets/images/rosto 2.jpg">
+        <img class="w-10 h-10 rounded-full object-cover" src="./assets/images/rosto 3.jpg">
+        <img class="w-10 h-10 rounded-full object-cover" src="./assets/images/rosto 4.jpg">
+        <p class="px-8 text-white/80 text-xs">Atendimento DIRETO, sem BUROCRACIA e com foco no que você realmente PRECISA</p>
+        <button class="ml-auto bg-tertiary/70 hover:bg-tertiary/90 hover:scale-105 transition cursor-pointer text-sm text-white/80 hover:text-white/90 tracking-[1%] py-2 px-4 rounded-[20px]">ENTRE EM CONTATO</button>
+    </div>
+</div>
+
+   </Section>
+
+   <!--Faqs-->
+   <section class="bg-maquiagem w-full h-[830px] bg-start bg-cover flex justify-center items-center px-12 overflow-hidden relative">
+
+        <div class="flex bg-primary w-[1312px] h-[620px] rounded-2xl">
+            <div class="px-[60px] py-10 w-full">
+                <p class="bg-secondary/70 px-2 rounded-full text-body text-white/60 border border-white/10 tracking-[6%] w-14 h-7">FAQs</p>
+                    <div class="relative flex justify-between w-full">
+                        <p class="font-body text-white/90 text-3xl tracking-[9%]">Perguntas Frequentes</p>
+                        <p class="justify-between font-body text-white/70 text-xs tracking-[9%] mt-2">pequena descrição do faqpequena descrição do faq</p>
+                    </div>
+                        <div class="flex justify-between">
+                        <ul class="font-body text-white/70 text-1xl py-[170px] space-y-6">
+                            <li class="transition hover:text-white/90 hover:border-white/70 hover:border w-fit px-2 tracking-[9%] hover:underline hover:cursor-pointer hover:scale-105 p-2">Serviços</p>
+                            <li class="transition hover:text-white/90 hover:border-white/70 hover:border w-fit px-2 tracking-[9%] hover:underline hover:cursor-pointer hover:scale-105 p-2">Atendimentos</p>
+                            <li class="transition hover:text-white/90 hover:border-white/70 hover:border w-fit px-2 tracking-[9%] hover:underline hover:cursor-pointer hover:scale-105 p-2">Agendamentos</p>
+                        </ul>
+
+                        <ul class="flex flex-col font-body text-white/80 text-xl py-[150px] w-[802px] h-11 space-y-2 tracking-[10%] gap-2">
+                            <li class="flex justify-between p-2 bg-tertiary/70 transition hover:cursor-pointer">Resposta especifica do botão selecionado! <span>+</span></li>
+                            <li class="flex justify-between p-2 bg-tertiary/70 transition hover:cursor-pointer">Resposta especifica do botão selecionado! <span>+</span></li>
+                            <li class="flex justify-between p-2 bg-tertiary/70 transition hover:cursor-pointer">Resposta especifica do botão selecionado! <span>+</span></li>
+                            <li class="flex justify-between p-2 bg-tertiary/70 transition hover:cursor-pointer">Resposta especifica do botão selecionado! <span>+</span></li>
+                        </ul>
+                        </div>
+            </div>
+        </div>
+
+   </section>
+
+   <footer class="flex justify-between items-center bg-secondary border-t border-solid border-btn/40 w-full h-[100px] px-12">
+        <p class="font-body text-white/80 text-xl text-center tracking-[3%]">Art & Beauty</p>
+        <p class="font-body text-white/80 text-xl text-center tracking-[3%]">© 2026 Art & Beauty. Todos os direitos reservados.</p>
+
+        <div class="flex gap-4">
+            <img src="./assets/images/insta.svg" class="cursor-pointer" alt="">
+            <img src="./assets/images/zap.svg" class="cursor-pointer" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>

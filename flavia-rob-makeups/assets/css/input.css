@@ -15,8 +15,10 @@
     --rounded-default: 10px;
 
     /*Images*/
+    --background-image-maquiagem: url("../images/Maquiagem.jpg");
     --background-image-circo: url("../images/Circo.jpg");
-    --background-image-flavia: url("../images/flavia.png")
+    --background-image-flavia: url("../images/flavia.png");
+    --background-image-mqm: url("../images/MQM.jpg");
 }
 
 @source "../../*.html";
