@@ -85,7 +85,16 @@ function verMais() {
 
         container.appendChild(novaMoldura);
 
-        novaMoldura.addEventListener("click", () =>{
+        novaMoldura.addEventListener("click", () => {
+            const fotosVisiveis = Array.from(document.querySelectorAll('.foto')).filter(img => {
+                const pai = img.closest('.moldura, .moldura-extra');
+                return pai && !pai.classList.contains('hidden');
+            });
+
+            const imgClicada = novaMoldura.querySelector('.foto');
+            i = fotosVisiveis.indexOf(imgClicada);
+
+            imgLightBox.src = imgClicada.src;
             openLightBox();
         });
     });
@@ -129,16 +138,21 @@ function closeLightBox() {
     lightBox.classList.add('hidden');
 }
 
+let i = 0;
 function carrossel(direcao) {
-    index += direcao;
+    const fotosVisiveis = Array.from(document.querySelectorAll('.foto')).filter(img => {
+        const molduraPai = img.closest('.moldura, .moldura-extra');
+        return molduraPai && !molduraPai.classList.contains('hidden');
+    });
+    i += direcao;
     
-    if(index > foto.length - 1){
-        index = 0;
-    }else if(index < 0){
-        index = foto.length - 1;
+    if (i >= fotosVisiveis.length) {
+        i = 0;
+    } else if (i < 0) {
+        i = fotosVisiveis.length - 1;
     }
 
-    imgLightBox.src = foto[index].src;
+    imgLightBox.src = fotosVisiveis[i].src;
 }
 
 next.addEventListener('click', () => carrossel(1));
@@ -148,11 +162,21 @@ close.addEventListener("click", () =>{
     closeLightBox();
 });
 
-moldura.forEach((m, i) =>{
-    m.addEventListener("click", () =>{
-        imgLightBox.src = foto[i].src;
-        openLightBox();
+moldura.forEach((m) => {
+    m.addEventListener("click", () => {
+        const fotosVisiveis = Array.from(document.querySelectorAll('.foto')).filter(img => {
+            const pai = img.closest('.moldura, .moldura-extra');
+            return pai && !pai.classList.contains('hidden');
         });
-    });
 
+        const imgClicada = m.querySelector('.foto');
+        
+        // Sincroniza o índice global 'i' com a posição da foto na lista visível
+        i = fotosVisiveis.indexOf(imgClicada);
+        
+        imgLightBox.src = imgClicada.src;
+        openLightBox();
+    });
+});
+ 
 verificar();
